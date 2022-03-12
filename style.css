@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display';
+    font-size: 2.7rem;
+
+}
+
+.info {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 0px 0px 18px 0px;
+}
+
+.card {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: hsl(31, 77%, 52%);
+    width: 225px;
+}
+
+.button {
+    padding: 15px 30px;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+#first {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+#second {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#third {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+#first .button {
+    color: hsl(31, 77%, 52%);
+}
+
+#second .button {
+    color: hsl(184, 100%, 22%);
+}
+
+#third .button {
+    color: hsl(179, 100%, 13%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    color: white !important;
+}
+
+
+@media only screen and (max-width: 765px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+    }
+
+    #first {
+        border-top-left-radius: unset;
+        border-bottom-left-radius: unset;
+        border-start-end-radius: 5%;
+        border-start-start-radius: 5%;
+    }
+
+    #third {
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;
+        border-end-end-radius: 5%;
+        border-end-start-radius: 5%;
+    }
+}
